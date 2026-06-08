@@ -5,8 +5,8 @@ Thank you for your interest in contributing to the ABT reference implementation.
 ## Development Setup
 
 ```bash
-git clone https://github.com/vikaskumar/average-binary-tree
-cd average-binary-tree
+git clone https://github.com/VikasKumar8048/Average-Binary-Tree-ABT
+cd Average-Binary-Tree-ABT
 pip install -e ".[dev]"
 ```
 
@@ -38,4 +38,4 @@ The paper is the single source of truth. Contributions must:
 
 ## Reporting Issues
 
-Open an issue at https://github.com/vikaskumar/average-binary-tree/issues
+Open an issue at https://github.com/VikasKumar8048/Average-Binary-Tree-ABT/issues
