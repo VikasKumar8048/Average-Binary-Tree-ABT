@@ -1,0 +1,93 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name        = "average-binary-tree"
+version     = "1.0.0"
+description = "Average Binary Tree (ABT): formal tree-to-tree transformation with pairwise sibling aggregation"
+readme      = "README.md"
+license     = {file = "LICENSE"}
+authors     = [
+    {name = "Vikas Kumar", email = "vikaskumar_240252@aitpune.edu.in"}
+]
+keywords    = [
+    "binary-tree", "tree-transformation", "data-structures",
+    "algorithms", "pairwise-aggregation", "hierarchical-compression",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+requires-python = ">=3.9"
+
+# Core dependencies — kept minimal intentionally
+dependencies = []
+
+[project.optional-dependencies]
+viz   = ["matplotlib>=3.5", "networkx>=2.8", "plotly>=5.0", "graphviz>=0.20"]
+bench = []
+dev   = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "hypothesis>=6.82",
+    "ruff>=0.1",
+    "black>=23",
+    "mypy>=1.5",
+]
+notebooks = [
+    "jupyter>=1.0",
+    "ipywidgets>=8.0",
+    "matplotlib>=3.5",
+    "plotly>=5.0",
+]
+all = ["average-binary-tree[viz,bench,dev,notebooks]"]
+
+[project.urls]
+Homepage      = "https://github.com/vikaskumar/average-binary-tree"
+Documentation = "https://average-binary-tree.readthedocs.io"
+Repository    = "https://github.com/vikaskumar/average-binary-tree"
+"Bug Tracker" = "https://github.com/vikaskumar/average-binary-tree/issues"
+Paper         = "https://ijirt.org/Article?manuscript=140001"
+
+[project.scripts]
+abt-reproduce = "reproduce_paper:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["abt*"]
+
+[tool.pytest.ini_options]
+testpaths   = ["tests"]
+addopts     = "-v --tb=short"
+
+[tool.coverage.run]
+source  = ["abt"]
+omit    = ["tests/*", "benchmarks/*", "experiments/*"]
+
+[tool.coverage.report]
+show_missing = true
+precision    = 2
+
+[tool.ruff]
+line-length = 99
+target-version = "py39"
+select = ["E", "F", "W", "I", "N", "UP"]
+
+[tool.black]
+line-length    = 99
+target-version = ["py39"]
+
+[tool.mypy]
+python_version      = "3.9"
+strict              = false
+ignore_missing_imports = true

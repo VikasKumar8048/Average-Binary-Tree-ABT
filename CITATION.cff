@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: >
+  If you use this software or build on the ABT data structure, please cite
+  the original research paper as well as the software repository.
+
+title: "Average Binary Tree (ABT): Python Reference Implementation"
+version: "1.0.0"
+date-released: "2026-06-01"
+license: MIT
+
+authors:
+  - family-names: Kumar
+    given-names: Vikas
+    affiliation: "Department of Computer Engineering, Army Institute of Technology, Pune, India"
+    email: vikaskumar_240252@aitpune.edu.in
+
+repository-code: "https://github.com/vikaskumar/average-binary-tree"
+url: "https://average-binary-tree.readthedocs.io"
+
+abstract: >
+  Reference implementation of the Average Binary Tree (ABT), a formally
+  defined derived data structure arising from the sibling-averaging operator
+  f : T → T' applied to a perfect binary tree.  The package includes the
+  core O(n)-time BFS algorithm, executable verification of all four theorems
+  (size contraction, height reduction, value containment, operator linearity)
+  and two structural properties, three generalisations (WABT, MBT, PBT),
+  a full benchmark suite, and visualization tools.
+
+keywords:
+  - binary-tree
+  - tree-transformation
+  - data-structures
+  - algorithms
+  - pairwise-aggregation
+  - hierarchical-compression
+  - average-pooling
+
+preferred-citation:
+  type: article
+  title: >
+    Average Binary Tree (ABT): A Novel Formal Tree-to-Tree Transformation
+    with Pairwise Sibling Aggregation
+  authors:
+    - family-names: Kumar
+      given-names: Vikas
+      affiliation: >
+        Department of Computer Engineering,
+        Army Institute of Technology, Pune, India
+  journal: "International Journal of Innovative Research in Technology (IJIRT)"
+  issn: "2349-6002"
+  volume: "13"
+  issue: "1"
+  year: 2026
+  month: 6
+  url: "https://ijirt.org/Article?manuscript=140001"
+  notes: "IJIRT 140001"

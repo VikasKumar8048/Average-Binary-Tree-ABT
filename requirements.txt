@@ -1,0 +1,3 @@
+# Core — no mandatory third-party dependencies
+# Optional visualization: pip install average-binary-tree[viz]
+# Optional dev tools:     pip install average-binary-tree[dev]
