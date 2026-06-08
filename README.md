@@ -1,6 +1,6 @@
 # Average Binary Tree (ABT)
 
-[![Tests](https://github.com/vikaskumar/average-binary-tree/actions/workflows/test.yml/badge.svg)](https://github.com/vikaskumar/average-binary-tree/actions)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org)
 
